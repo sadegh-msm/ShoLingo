@@ -3,9 +3,10 @@ package routes
 import (
 	"github.com/go-redis/redis/v8"
 	"github.com/labstack/echo/v4"
+	"github.com/sadegh-msm/url-shortner/api/db"
+	
 	"log"
 	"net/http"
-	"url-shortner/api/db"
 )
 
 func ResolveURL(c echo.Context) error {
