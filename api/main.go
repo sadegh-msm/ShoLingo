@@ -4,11 +4,11 @@ import (
 	"fmt"
 	"log"
 	"os"
-	"url-shortner/api/routes"
 
 	"github.com/joho/godotenv"
 	"github.com/labstack/echo/v4"
 	"github.com/labstack/echo/v4/middleware"
+	"github.com/sadegh-msm/url-shortner/api/routes"
 )
 
 func main() {

@@ -5,12 +5,13 @@ import (
 	"github.com/go-redis/redis/v8"
 	"github.com/google/uuid"
 	"github.com/labstack/echo/v4"
+	"github.com/sadegh-msm/url-shortner/api/db"
+	"github.com/sadegh-msm/url-shortner/api/helpers"
+
 	"net/http"
 	"os"
 	"strconv"
 	"time"
-	"url-shortner/api/db"
-	"url-shortner/api/helpers"
 )
 
 type request struct {
