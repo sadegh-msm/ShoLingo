@@ -55,7 +55,7 @@ After starting the server, you can use the following endpoints:
 
     ```go
     e.GET("/:url", routes.ResolveURL)
-	e.POST("/api/v1", routes.ShortenURL)
-     ```
+    e.POST("/api/v1", routes.ShortenURL)
+    ```
 
 You can also change the configuration in `.env` file.
