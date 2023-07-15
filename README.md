@@ -53,9 +53,10 @@ ShoLingo is a simple yet effective URL shortener service written in Go. This pro
 
 After starting the server, you can use the following endpoints:
 
-    ```go
-    e.GET("/:url", routes.ResolveURL)
-    e.POST("/api/v1", routes.ShortenURL)
-    ```
+   ```go
+   e.GET("/:url", routes.ResolveURL)
+   e.POST("/api/v1", routes.ShortenURL)
+   ```
+This project is dockerized and you can build the images with dockerfiles.
 
 You can also change the configuration in `.env` file.
