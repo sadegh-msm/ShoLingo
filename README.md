@@ -34,7 +34,7 @@ ShoLingo is a simple yet effective URL shortener service written in Go. This pro
 2. Navigate into the cloned repository:
 
     ```bash
-    cd goshort
+    cd ShoLingo
     ```
 
 3. Install the required Go dependencies:
@@ -53,7 +53,9 @@ ShoLingo is a simple yet effective URL shortener service written in Go. This pro
 
 After starting the server, you can use the following endpoints:
 
-- `POST /api/shorten` to create a short URL.
-- `GET /:code` to redirect to the original URL.
+    ```go
+    e.GET("/:url", routes.ResolveURL)
+	e.POST("/api/v1", routes.ShortenURL)
+     ```
 
-More detailed API documentation can be found in the `docs/` directory.
+You can also change the configuration in `.env` file.
